@@ -1,12 +1,16 @@
-<p>{{data}}!
-
-	
-
+<p>
 <button (click)="click(myinput.value);" class="btn btn-primary">click me</button>
 </p>
+
+<div *ngFor='let d of data1' >
+	{{d.id}}
+	{{d.name}}
+</div>
 
 <div>
 	<label>name:
       <input #myinput  placeholder="name">
     </label>
 </div>
+
+
